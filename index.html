@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Black Sea Surf School | Surf Lessons — Varna</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+  :root { --ocean: #0369a1; --sun: #fb923c; --sky: #e0f2fe; --text: #37455a; }
+  body { background: #fff; color: var(--text); line-height: 1.7; }
+  nav { display: flex; justify-content: space-between; align-items: center; padding: 18px 7%; background: #fff; border-bottom: 3px solid var(--sun); position: sticky; top: 0; z-index: 10; }
+  .logo { font-size: 1.4rem; font-weight: 900; color: var(--ocean); }
+  .logo span { color: var(--sun); }
+  nav ul { display: flex; gap: 28px; list-style: none; }
+  nav a { color: var(--ocean); text-decoration: none; font-weight: 600; font-size: .95rem; transition: .3s; }
+  nav a:hover { color: var(--sun); }
+  .hero { text-align: center; padding: 110px 8% 100px; background: linear-gradient(rgba(3,105,161,.55), rgba(3,105,161,.7)), url('https://images.unsplash.com/photo-1502680390469-be75c86b636f?w=1600') center/cover; color: #fff; }
+  .hero h1 { font-size: clamp(2.5rem, 6vw, 4.2rem); font-weight: 900; }
+  .hero h1 span { color: var(--sun); }
+  .hero p { max-width: 580px; margin: 20px auto 34px; font-size: 1.15rem; }
+  .btn { display: inline-block; padding: 15px 44px; background: var(--sun); color: #fff; font-weight: 700; border-radius: 50px;
+         text-decoration: none; letter-spacing: 1px; text-transform: uppercase; font-size: .9rem; border: none; cursor: pointer; transition: .3s; }
+  .btn:hover { background: #fff; color: var(--ocean); transform: scale(1.05); }
+  section { padding: 85px 7%; }
+  .section-title { text-align: center; margin-bottom: 50px; }
+  .section-title h2 { color: var(--ocean); font-size: 2.2rem; font-weight: 900; }
+  .section-title p { color: var(--sun); font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: .85rem; margin-top: 6px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 26px; max-width: 1100px; margin: auto; }
+  .lesson { background: var(--sky); border-radius: 18px; padding: 36px 30px; text-align: center; border-bottom: 5px solid var(--sun); transition: .3s; }
+  .lesson:hover { transform: translateY(-8px); box-shadow: 0 18px 40px rgba(3,105,161,.18); }
+  .lesson h3 { color: var(--ocean); font-size: 1.2rem; }
+  .lesson .price { font-size: 2.2rem; color: var(--sun); font-weight: 900; margin: 14px 0; }
+  .lesson ul { list-style: none; margin: 14px 0 24px; }
+  .lesson li { padding: 7px 0; font-size: .95rem; }
+  #info { background: var(--sky); }
+  .info-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 44px; text-align: center; }
+  .info-grid h4 { color: var(--sun); text-transform: uppercase; letter-spacing: 2px; font-size: .8rem; margin-bottom: 5px; }
+  .info-grid p { color: var(--ocean); font-weight: 600; }
+  form { max-width: 520px; margin: 40px auto 0; }
+  form label { display: block; color: var(--ocean); font-weight: 700; font-size: .85rem; text-transform: uppercase; letter-spacing: 1px; margin: 14px 0 6px; }
+  form input, form textarea { width: 100%; padding: 13px; background: #fff; border: 2px solid var(--sky); border-radius: 12px; font-size: 1rem; color: var(--text); }
+  form input:focus, form textarea:focus { outline: none; border-color: var(--sun); }
+  form textarea { min-height: 110px; resize: vertical; }
+  .form-msg { margin-top: 14px; color: var(--ocean); font-weight: 600; display: none; text-align: center; }
+  footer { text-align: center; padding: 26px; background: var(--ocean); color: rgba(255,255,255,.8); font-size: .85rem; }
+  @media (max-width: 768px) { nav ul { display: none; } }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">BLACK SEA <span>SURF</span> SCHOOL</div>
+  <ul>
+    <li><a href="#lessons">Lessons</a></li>
+    <li><a href="#info">Find Us</a></li>
+    <li><a href="#book">Book</a></li>
+  </ul>
+</nav>
+
+<header class="hero">
+  <h1>Catch Your <span>First Wave</span></h1>
+  <p>Surf, SUP, and kite lessons on Varna's best beaches. All equipment included, certified instructors, and guaranteed smiles.</p>
+  <a href="#lessons" class="btn">See Lessons</a>
+</header>
+
+<section id="lessons">
+  <div class="section-title"><h2>Lessons & Camps</h2><p>June – September · all levels welcome</p></div>
+  <div class="grid">
+    <div class="lesson">
+      <h3>Beginner Group Lesson</h3>
+      <div class="price">60 лв.</div>
+      <ul><li>2 hours with instructor</li><li>Board & wetsuit included</li><li>Max 6 people per group</li><li>Beach theory + water practice</li></ul>
+      <a href="#book" class="btn">Book Now</a>
+    </div>
+    <div class="lesson">
+      <h3>Private Lesson</h3>
+      <div class="price">110 лв.</div>
+      <ul><li>1-on-1 coaching, 90 min</li><li>Video analysis included</li><li>All equipment provided</li><li>Flexible scheduling</li></ul>
+      <a href="#book" class="btn">Book Now</a>
+    </div>
+    <div class="lesson">
+      <h3>Kids Surf Camp (5 days)</h3>
+      <div class="price">350 лв.</div>
+      <ul><li>Ages 8–14</li><li>Daily 3-hour sessions</li><li>Snacks & photos included</li><li>Certificate at the end</li></ul>
+      <a href="#book" class="btn">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<section id="info">
+  <div class="section-title"><h2>Find Us on the Beach</h2><p>look for the orange flags</p></div>
+  <div class="info-grid">
+    <div><h4>📍 Location</h4><p>South Beach, Varna (lifeguard post 3)</p></div>
+    <div><h4>🕕 Hours</h4><p>Daily · 08:00 – 19:00 (Jun–Sep)</p></div>
+    <div><h4>📞 Phone</h4><p>+359 89 300 4455</p></div>
+    <div><h4>📸 Instagram</h4><p>@blackseasurf</p></div>
+  </div>
+  <form id="contactForm" action="https://formspree.io/f/mzebnara" method="POST" style="background:#fff;padding:30px;border-radius:18px;">
+    <input type="hidden" name="site" value="Black Sea Surf School — Lesson Booking">
+    <label for="name">Name</label>
+    <input id="name" name="name" type="text" required placeholder="Your name">
+    <label for="email">Email</label>
+    <input id="email" name="email" type="email" required placeholder="you@example.com">
+    <label for="message">Lesson & preferred date</label>
+    <textarea id="message" name="message" required placeholder="2 beginner group lessons, Saturday morning..."></textarea>
+    <button type="submit" class="btn" style="display:block;margin:18px auto 0;">Book My Lesson</button>
+    <p class="form-msg" id="formMsg">✅ Cowabunga! We'll confirm your lesson within a few hours.</p>
+  </form>
+</section>
+
+<footer>© 2026 Black Sea Surf School · Varna</footer>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = this, msg = document.getElementById('formMsg');
+    try {
+      const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+      msg.textContent = res.ok ? "✅ Cowabunga! We'll confirm your lesson within a few hours." : "⚠️ Wipeout! Something went wrong — call +359 89 300 4455.";
+      if (res.ok) form.reset();
+    } catch { msg.textContent = "⚠️ Network error — please try again."; }
+    msg.style.display = 'block';
+  });
+</script>
+
+</body>
+</html>
